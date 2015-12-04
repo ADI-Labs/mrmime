@@ -1,0 +1,158 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+
+	width: 100%;
+	height: 100%;
+
+	font-family: "Ubuntu";
+}
+
+ul
+{
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+}
+
+.panel-wrapper
+{
+	width: 100%;
+	height: 100%;
+}
+
+#control-panel
+{
+	width: 20%;
+	height: 100%;
+
+	text-align: center;
+
+	background-color: #011627;
+
+	float: left;
+
+	position: fixed;
+}
+
+	#control-panel ul
+	{
+		padding-top: 15%;
+	}
+
+		#control-panel ul li
+		{
+			padding: 1%;
+			margin: 0 1% 1% 1%;
+
+			cursor: pointer;
+			
+			background-color: #363946;
+			color: #FF6E1E;
+		}
+
+			#control-panel ul li:hover, #control-panel ul li.selected
+			{
+				background-color: #95A3A4;
+			}
+
+			#control-panel #dartmouth-physical
+			{
+				margin-left: 20%;
+			}
+
+			#control-panel #dartmouth-physical-single-star,
+			#control-panel #dartmouth-physical-binary-star,
+			#control-panel #dartmouth-physical-triple-star
+			{
+				margin-left: 40%;
+			}
+
+			#control-panel #dartmouth-observed
+			{
+				margin-left: 20%;
+			}
+
+			#control-panel #dartmouth-observed-single-star,
+			#control-panel #dartmouth-observed-binary-star,
+			#control-panel #dartmouth-observed-triple-star
+			{
+				margin-left: 40%;
+			}
+
+			#control-panel #likelihood-plot-pl
+			{
+				margin-left: 20%;
+			}
+
+			#control-panel #likelihood-plot-eb
+			{
+				margin-left: 20%;
+			}
+
+			#control-panel #likelihood-plot-beb
+			{
+				margin-left: 20%;
+			}
+
+			#control-panel #likelihood-plot-heb
+			{
+				margin-left: 20%;
+			}
+
+			#control-panel #signal
+			{
+				margin-left: 20%;
+			}
+
+#display-panel
+{
+	width: 80%;
+	height: 100vh;
+
+	float: right;
+
+	background-color: red;
+}
+
+	#display-panel img
+	{
+		width: 100%;
+	}
+
+	#grid-wrapper
+	{
+		width: 100%;
+		height: 100%;
+	}
+
+		#fpp-summary-panel
+		{
+			width: 50%;
+			// display: none;
+		}
+
+		.dartmouth
+		{
+			width: 8%;
+			// display: none;
+		}
+
+		.likelihood-plot
+		{
+			width: 40%;
+			// display: none;
+		}
+
+		.signal-plot
+		{
+			width: 40%;
+			// display: none;
+		}
+
+#uploaded-img
+{
+	max-width: 10%;
+}

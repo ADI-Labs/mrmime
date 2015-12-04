@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Kepler False Positive Interactive Plotting Tool</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main2.css') }}">
+
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+		<!-- JS -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/draggabilly/1.2.0/draggabilly.pkgd.min.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/packery.pkgd.min.js') }}"></script>
+
+	</head>
+
+	<body>
+
+		<div class="panel-wrapper">
+ 			<div id="control-panel">
+ 				<input type="file" id="file-select"/>
+ 				<div id="image-position"></div>
+ 			</div>
+
+			<div id="display-panel">
+				<div id="grid-wrapper">
+				</div>
+			</div>
+
+			<!-- JS -->
+			<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+		</div>
+	</body>
+
+</html>

@@ -3,17 +3,24 @@
 <html>
 
 <head>
-	<title>Mr. Mime</title>
+	<title>Mr. Mimedd</title>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-	<link rel="stylesheet" href="main.css">
+	<!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
 </head>
 
 <body>
 
 	<div class="control-panel">
-		asdf
+		<div id="example">
+			
+		</div>
 	</div>
 
 	<div class="canvas-wrapper">
@@ -21,6 +28,8 @@
 
 		</canvas> -->
 	</div>
+
+	<script type="text/babel" src="js/main.js"></script>
 
 </body>
 
